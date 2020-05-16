@@ -61,18 +61,35 @@
 
     </dependencies>
 
-
-<!--    <dependencyManagement>
+    <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Greenwich.RELEASE</version>
-                <type>pom</type>
-                <scope>import</scope>
+                <groupId>org.agamotto.cloud</groupId>
+                <artifactId>xxx-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.agamotto.cloud</groupId>
+                <artifactId>xxx-restful</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.agamotto.cloud</groupId>
+                <artifactId>xxx-interface</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.agamotto.cloud</groupId>
+                <artifactId>xxx-test</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.agamotto.cloud</groupId>
+                <artifactId>xxx-boot</artifactId>
+                <version>${project.version}</version>
             </dependency>
         </dependencies>
-    </dependencyManagement>  -->
+    </dependencyManagement>
 
     <repositories>
         <repository>

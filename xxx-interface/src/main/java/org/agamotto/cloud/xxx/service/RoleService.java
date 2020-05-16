@@ -35,7 +35,7 @@ public interface RoleService {
      * @param role
      * @return
      */
-    Mono add(RolePO role);
+    Mono add(Object role);
 
     /**
      * 更新
@@ -43,7 +43,7 @@ public interface RoleService {
      * @param id
      * @return
      */
-    Mono update(RolePO role,Long id);
+    Mono update(Object role,Long id);
 
     /**
      * 删除

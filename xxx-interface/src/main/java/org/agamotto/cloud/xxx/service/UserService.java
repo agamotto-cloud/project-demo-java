@@ -23,7 +23,7 @@ public interface UserService {
      * @param userPO a
      * @return a
      */
-    Mono<Boolean> register(UserPO userPO);
+    Mono<Boolean> register(Object userPO);
 
     /**
      * 根据用户名获取用户
