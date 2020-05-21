@@ -18,12 +18,10 @@
         <dependency>
             <artifactId>xxx-restful</artifactId>
             <groupId>org.agamotto.cloud</groupId>
-            <version>0.0.1</version>
         </dependency>
         <dependency>
             <artifactId>xxx-core</artifactId>
             <groupId>org.agamotto.cloud</groupId>
-            <version>0.0.1</version>
         </dependency>
     </dependencies>
 
@@ -32,6 +30,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <outputDirectory>../target</outputDirectory>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -43,5 +44,6 @@
             </plugin>
 
         </plugins>
+        <finalName>${project.parent.artifactId}</finalName>
     </build>
 </project>
