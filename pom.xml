@@ -65,6 +65,12 @@
         <dependencies>
             <dependency>
                 <groupId>org.agamotto.cloud</groupId>
+                <artifactId>agamotto-starter</artifactId>
+                <version>0.0.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.agamotto.cloud</groupId>
                 <artifactId>xxx-core</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -88,6 +94,7 @@
                 <artifactId>xxx-boot</artifactId>
                 <version>${project.version}</version>
             </dependency>
+
         </dependencies>
     </dependencyManagement>
 
@@ -100,6 +107,13 @@
         <repository>
             <id>spring-milestone</id>
             <url>https://repo.spring.io/milestone</url>
+        </repository>
+      <repository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/agamotto-cloud/*</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
         </repository>
     </repositories>
 </project>
