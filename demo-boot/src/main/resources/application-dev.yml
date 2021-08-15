@@ -3,3 +3,5 @@ spring:
     url: jdbc:mysql://rm-uf6r5734600f64aq86o.mysql.rds.aliyuncs.com/agamotto?useUnicode=true&characterEncoding=utf8
     username: agamotto
     password: Dong19951018
+server:
+  port: 8080

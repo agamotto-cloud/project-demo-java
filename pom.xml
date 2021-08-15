@@ -39,11 +39,10 @@
     <dependencies>
 
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <groupId>org.agamotto.cloud</groupId>
+            <artifactId>agamotto-starter</artifactId>
+            <version>0.0.3</version>
         </dependency>
-
-        <!--自动生成getset-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>

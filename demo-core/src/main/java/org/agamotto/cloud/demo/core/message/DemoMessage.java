@@ -1,4 +1,4 @@
-package org.agamotto.cloud.demo.api.entity.message;
+package org.agamotto.cloud.demo.core.message;
 
 import lombok.Getter;
 

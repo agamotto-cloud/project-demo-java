@@ -14,11 +14,8 @@
     <name>demo-boot</name>
 
     <dependencies>
-        <dependency>
-            <groupId>org.agamotto.cloud</groupId>
-            <artifactId>agamotto-starter</artifactId>
-            <version>0.0.1</version>
-        </dependency>
+
+
         <dependency>
             <artifactId>demo-restful</artifactId>
             <groupId>org.agamotto.cloud</groupId>
