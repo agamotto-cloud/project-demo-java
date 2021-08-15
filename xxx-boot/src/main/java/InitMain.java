@@ -40,14 +40,14 @@ public class InitMain {
                 }
             }
             if (sourceFile.getName().contains("xxx") || sourceFile.getName().contains("XXX")) {
-                File newFile = new File(sourceFile.getParentFile(), sourceFile.getName().replace("xxx", name));
+                File newFile = new File(sourceFile.getParentFile(), replace(sourceFile.getName(),getPlaceHolder(name)));
                 sourceFile.renameTo(newFile);
             }
 
         } else {
             // 普通文件
             if (sourceFile.getName().contains("xxx") || sourceFile.getName().contains("XXX")) {
-                File newFile = new File(sourceFile.getParentFile(), sourceFile.getName().replace("xxx", name));
+                File newFile = new File(sourceFile.getParentFile(),  replace(sourceFile.getName(),getPlaceHolder(name)));
                 sourceFile.renameTo(newFile);
                 sourceFile = newFile;
             }
@@ -66,7 +66,7 @@ public class InitMain {
         }
         BufferedReader in = new BufferedReader(new FileReader(sourceFile));
         File tempFile = new File(sourceFile.getParentFile(), "temp" + sourceFile.getName());
-        BufferedWriter out = new BufferedWriter(new FileWriter(sourceFile));
+        BufferedWriter out = new BufferedWriter(new FileWriter(tempFile));
         while (in.ready()) {
             String line = in.readLine();
             line = replace(line, placeholder);
