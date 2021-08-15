@@ -61,6 +61,9 @@ public class InitMain {
             //不是源文件
             return;
         }
+        if(sourceFile.getName().equals("InitMain.java")){
+            return;
+        }
         BufferedReader in = new BufferedReader(new FileReader(sourceFile));
         File tempFile = new File(sourceFile.getParentFile(), "temp" + sourceFile.getName());
         BufferedWriter out = new BufferedWriter(new FileWriter(sourceFile));
