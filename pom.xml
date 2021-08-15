@@ -7,19 +7,18 @@
     <groupId>org.agamotto.cloud</groupId>
 
 
-    <!-- // todo -->
-    <artifactId>agamotto-xxx</artifactId>
+    <artifactId>agamotto-demo</artifactId>
 
     <packaging>pom</packaging>
 
     <version>0.0.1</version>
+
    <modules>
-       <!-- // todo -->
-       <module>xxx-core</module>
-       <module>xxx-restful</module>
-       <module>xxx-interface</module>
-       <module>xxx-test</module>
-       <module>xxx-boot</module>
+       <module>demo-core</module>
+       <module>demo-restful</module>
+       <module>demo-interface</module>
+       <module>demo-test</module>
+       <module>demo-boot</module>
    </modules>
 
     <properties>
@@ -32,7 +31,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.4.RELEASE</version>
+        <version>2.4.2</version>
     </parent>
 
 
@@ -41,19 +40,8 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-webflux</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
-
-
-
-
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>1.2.47</version>
-        </dependency>
-
 
         <!--自动生成getset-->
         <dependency>
@@ -67,30 +55,29 @@
     <dependencyManagement>
         <dependencies>
 
-
             <dependency>
                 <groupId>org.agamotto.cloud</groupId>
-                <artifactId>xxx-core</artifactId>
+                <artifactId>demo-core</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.agamotto.cloud</groupId>
-                <artifactId>xxx-restful</artifactId>
+                <artifactId>demo-restful</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.agamotto.cloud</groupId>
-                <artifactId>xxx-interface</artifactId>
+                <artifactId>demo-interface</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.agamotto.cloud</groupId>
-                <artifactId>xxx-test</artifactId>
+                <artifactId>demo-test</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.agamotto.cloud</groupId>
-                <artifactId>xxx-boot</artifactId>
+                <artifactId>demo-boot</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
@@ -102,10 +89,6 @@
             <id>alimaven</id>
             <name>aliyun maven</name>
             <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
-        </repository>
-        <repository>
-            <id>spring-milestone</id>
-            <url>https://repo.spring.io/milestone</url>
         </repository>
         <repository>
             <id>spring-relise</id>
