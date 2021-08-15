@@ -35,7 +35,10 @@
         <version>2.1.4.RELEASE</version>
     </parent>
 
+
+
     <dependencies>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-webflux</artifactId>
@@ -56,18 +59,14 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.16.20</version>
+            <version>1.18.20</version>
         </dependency>
 
     </dependencies>
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>org.agamotto.cloud</groupId>
-                <artifactId>agamotto-starter</artifactId>
-                <version>0.0.1</version>
-            </dependency>
+
 
             <dependency>
                 <groupId>org.agamotto.cloud</groupId>
@@ -106,6 +105,10 @@
         </repository>
         <repository>
             <id>spring-milestone</id>
+            <url>https://repo.spring.io/milestone</url>
+        </repository>
+        <repository>
+            <id>spring-relise</id>
             <url>https://repo.spring.io/milestone</url>
         </repository>
       <repository>

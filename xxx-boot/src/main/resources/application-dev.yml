@@ -1,5 +1,5 @@
 spring:
   datasource:
-    url: jdbc:mysql://cdb-dsn5ac6n.gz.tencentcdb.com:10075/xxx?useUnicode=true&characterEncoding=utf8&userSSL=false
-    username: root
-    password: agamotto123
+    url: jdbc:mysql://rm-uf6r5734600f64aq86o.mysql.rds.aliyuncs.com/agamotto?useUnicode=true&characterEncoding=utf8
+    username: agamotto
+    password: Dong19951018

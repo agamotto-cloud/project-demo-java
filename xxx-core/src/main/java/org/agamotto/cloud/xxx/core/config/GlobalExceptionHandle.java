@@ -1,7 +1,7 @@
 package org.agamotto.cloud.xxx.core.config;
 
 import lombok.extern.slf4j.Slf4j;
-import org.agamotto.cloud.xxx.exception.xxxException;
+import org.agamotto.cloud.xxx.exception.XXXException;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.boot.autoconfigure.web.ResourceProperties;
 import org.springframework.boot.autoconfigure.web.ServerProperties;
@@ -55,8 +55,8 @@ public class GlobalExceptionHandle extends DefaultErrorWebExceptionHandler {
     protected Map<String, Object> getErrorAttributes(ServerRequest request, boolean includeStackTrace) {
 
         Throwable error = super.getError(request);
-        if (error instanceof xxxException) {
-            return response(((xxxException) error).getCode(), this.buildMessage(request, error.getMessage()));
+        if (error instanceof XXXException) {
+            return response(((XXXException) error).getCode(), this.buildMessage(request, error.getMessage()));
         }
         return response(500, this.buildMessage(request, "服务器内部异常"));
     }
