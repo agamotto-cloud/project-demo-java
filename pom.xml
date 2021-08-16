@@ -95,7 +95,7 @@
         </repository>
       <repository>
             <id>github</id>
-            <url>https://agamottouser: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@maven.pkg.github.com/agamotto-cloud/*</url>
+            <url>https://agamottouser:&#103;hp_t7WJYvPgSzum02aWEpBaTYbMWG3ohE3sqBvh@maven.pkg.github.com/agamotto-cloud/*</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
