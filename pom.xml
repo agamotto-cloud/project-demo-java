@@ -41,7 +41,7 @@
         <dependency>
             <groupId>org.agamotto.cloud</groupId>
             <artifactId>agamotto-starter</artifactId>
-            <version>0.0.4</version>
+            <version>0.1.0</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -93,9 +93,9 @@
             <id>spring-relise</id>
             <url>https://repo.spring.io/milestone</url>
         </repository>
-      <repository>
-            <id>github</id>
-            <url>https://agamottouser:&#103;hp_t7WJYvPgSzum02aWEpBaTYbMWG3ohE3sqBvh@maven.pkg.github.com/agamotto-cloud/*</url>
+        <repository>
+            <id>agamotto-dev-commons</id>
+            <url>https://agamotto-maven.pkg.coding.net/repository/dev/commons/</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
