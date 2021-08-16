@@ -41,7 +41,7 @@
         <dependency>
             <groupId>org.agamotto.cloud</groupId>
             <artifactId>agamotto-starter</artifactId>
-            <version>0.0.3</version>
+            <version>0.0.4</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -95,7 +95,7 @@
         </repository>
       <repository>
             <id>github</id>
-            <url>https://maven.pkg.github.com/agamotto-cloud/*</url>
+            <url>https://agamottouser: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@maven.pkg.github.com/agamotto-cloud/*</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
